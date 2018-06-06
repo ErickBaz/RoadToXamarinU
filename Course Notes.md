@@ -28,11 +28,11 @@ Create a new android app result:
 - primary entry point => MainLauncher = true
 - activity icon => Icon = "@drawable/icon"
 - Instantiates UI => SetContentView(Resource.Layout.Main);
-- Gain acccess to views in the UI => `FindViewById<Button>(Resource.Id.MyButton)`;
+- Gain acccess to views in the UI from code behind => `FindViewById<Button>(Resource.Id.MyButton)`;
 
 Android APP is a collection of Activities (UI + CodeBehind) and extra files (images, data files, etc.)
 
-And Android UI is composed of Views (like button, textbox, etc) and ViewGroups divided in Collection Views(lists, grids, etc) and Layout Panels (elements that size and position their children like LinearLayout, GridLayout, RelativeLayout, AbsoluteLayout)
+An Android UI is composed of Views (like button, textbox, etc) and ViewGroups divided in Collection Views(lists, grids, etc) and Layout Panels (elements that size and position their children like LinearLayout, GridLayout, RelativeLayout, AbsoluteLayout)
 Views are also called **widgets**
 
 A view is a UI component with on-screen visuals and behaviour such as events
@@ -65,8 +65,6 @@ A 100dp button on a 480 dpi screen will occupy 300 physical pixels: 100 * 480 / 
 - @+id to create the ID for an UI element
 - With FindViewByID you can get an UI element in the code behind (null returned when the id is not found).
 
-Here: 57:51
-
 - Xamarin.Android uses Android native tools and libraries:
   - JDK (Java SDK) : is the collection of libraries and tools needed to build and run java applications (specially Dev tools like compiler, jar signer, etc because they are used in the Android Build Process)
   - Android SDK : APIs and tools needed to create and run a native Android App.
@@ -91,9 +89,9 @@ Here: 57:51
 - Mono runtime (your C# code + .net libraries) and Android Runtime (java libraries and android libraries) run side by side to execute a Xamarin.Android App
 - Android SDK updates needs to be updated manually in order to have access to the latest versions of Android. (once a month is good).
 - Android SDK manager helps you install new and old versions of the Android SDK
-  - Android SDK Tools
+  - Android SDK Tools (recomendation: keep only the latest three tools)
   - Android SDK Platform-Tools (recomendation: install only platforms that you want to target)
-  - Andoird SDK Build-tools
+  - Android SDK Build-tools
 
 ## AND102 Activities and Intents
 
